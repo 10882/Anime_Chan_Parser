@@ -32,7 +32,7 @@ def urlcreate():
 
 def dowloadall(images):
     for addurl in images:
-        soup = BeautifulSoup(requests.get('https://anime-pictures.net'+addurl).content)
+        soup = BeautifulSoup(requests.get('https://anime-pictures.net'+addurl).content, features="lxml")
         razdel = soup.find('div', class_ = 'post_vote_block')
         downloadbut = razdel.find('a', class_ = 'download_icon')
         data = downloadbut.attrs
