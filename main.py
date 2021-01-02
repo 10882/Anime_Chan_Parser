@@ -1,3 +1,5 @@
+user_agent = {'user_agent' : ''}
+
 from bs4 import BeautifulSoup
 import requests
 
@@ -14,7 +16,6 @@ def imagelistget(urllist, user_agent):
     return(imglist)
 
 
-user_agent = {'user_agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/72.0.3815.459'}
 
 def urlcreate():
     tagstr = ''
@@ -43,5 +44,8 @@ def dowloadall(images):
 
 
 url = urlcreate()
+if user_agent[user agent] = '':
+    print('Пожалуйста, введите свой user agent в 1 строке')
+    exit()
 images = imagelistget(url, user_agent)
 dowloadall(images)
