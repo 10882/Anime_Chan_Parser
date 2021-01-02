@@ -44,7 +44,7 @@ def dowloadall(images):
 
 
 url = urlcreate()
-if user_agent[user agent] = '':
+if user_agent['user_agent'] == '':
     print('Пожалуйста, введите свой user agent в 1 строке')
     exit()
 images = imagelistget(url, user_agent)
