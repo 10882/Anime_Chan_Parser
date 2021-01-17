@@ -10,3 +10,8 @@ requests
 
 You can install them by running:
 Python -m pip install beautifulsoup4 requests
+Установка Linux: 
+Обновление и установка библиотек: 
+- sudo apt update 
+- sudo apt-get install python3-pip 
+- pip3 install beautifulsoup4
